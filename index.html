@@ -142,6 +142,15 @@ function buildMessage() {
 📱 મોબાઇલ નંબર: ${phone}
 📦 જથ્થો: ${qty} KG
 💰 કુલ કિંમત: ₹${total}
+🚚 Shipping Charge: ₹${shipping}
+💵 કુલ કિંમત: ₹${grandTotal}
+
+📍 Delivery Address:
+સરનામું: ${address}
+Area / વિસ્તાર: ${area}
+City / શહેર: ${city}
+country / દેશ: ${country}
+PIN Code: ${pincode}
 
 કૃપા કરીને મારો ઓર્ડર કન્ફર્મ કરો. 🙏`;
 }
@@ -161,7 +170,18 @@ function updateOrderLink() {
 📱 મોબાઇલ નંબર: ${phone}
 📦 જથ્થો: ${qty} KG
 💰 કુલ કિંમત: ₹${total}
+🚚 Shipping Charge: ₹${shipping}
+💵 કુલ કિંમત: ₹${grandTotal}
 
+📍 Delivery Address:
+સરનામું: ${address}
+Area / વિસ્તાર: ${area}
+City / શહેર: ${city}
+country / દેશ: ${country}
+PIN Code: ${pincode}
+
+કૃપા કરીને મારો ઓર્ડર કન્ફર્મ કરો. 🙏`;
+ 
 કૃપા કરીને મારો ઓર્ડર કન્ફર્મ કરો. 🙏`;
 
   document.getElementById("whatsappButton").href =
@@ -197,6 +217,17 @@ document.getElementById("whatsappButton").addEventListener("click", function() {
     "📱 મોબાઇલ નંબર: " + phone + "\n" +
     "📦 જથ્થો: " + qty + " KG\n" +
     "💰 કુલ કિંમત: ₹" + total + "\n\n" +
+    🚚 Shipping Charge: ₹" + price + "\n" +
+💵 કુલ કિંમત: ₹" + total + \n\n" +
+
+📍 Delivery Address:
+સરનામું: ₹ + address  + "\n" +
+વિસ્તાર: ₹ + area + "\n" +
+શહેર: ₹ + City + "\n" +
+દેશ: ₹ + country + "\n" +
+PIN Code: ₹ + pincode + "\n" +
+ 
+કૃપા કરીને મારો ઓર્ડર કન્ફર્મ કરો. 🙏`;
     "કૃપા કરીને મારો ઓર્ડર કન્ફર્મ કરો. 🙏";
 
   const whatsappUrl =
