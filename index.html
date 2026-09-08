@@ -102,7 +102,7 @@ footer{background:#0b3d1c;color:#fff;text-align:center;padding:25px 15px;margin-
     <div class="total" style="display:block">
       <div style="display:flex;justify-content:space-between"><span>Product કિંમત</span><strong id="productTotal">₹220</strong></div>
       <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:18px"><span>Shipping Charge</span><strong>₹60</strong></div>
-      <div style="display:flex;justify-content:space-between;margin-top:10px;padding-top:10px;border-top:1px solid #b9d3a5"><span>કુલ કિંમત</span><strong id="total">₹280</strong></div>
+      <div style="display:flex;justify-content:space-between;margin-top:10px;padding-top:10px;border-top:1px solid #b9d3a5"></span><strong id="total">₹280</strong></div>
     </div>
 
     <button id="whatsappButton" class="wa" type="button">📱 WhatsApp પર Order કરો</button>
@@ -166,7 +166,7 @@ function updateOrderLink() {
   const qty = Number(document.getElementById("qty").value);
   const total = getPrice(qty);
   const shipping = 60;
-  const grandTotal = total + shipping;
+  const grandTotal = total + shipping + grandtotal
   document.getElementById("productTotal").textContent = "₹" + total;
   document.getElementById("total").textContent = "₹" + grandTotal;
 
@@ -260,7 +260,7 @@ document.getElementById("whatsappButton").addEventListener("click", function() {
   }
 
   const shipping = 60;
-  const grandTotal = total + shipping;
+  const grandTotal = total + shipping +grandtotal
 
   const message =
     "નમસ્તે Bansri Natural 🌿\n\n" +
