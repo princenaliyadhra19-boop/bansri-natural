@@ -165,7 +165,7 @@ function buildMessage() {
 function updateOrderLink() {
   const qty = Number(document.getElementById("qty").value);
   const total = getPrice(qty);
-  const shipping = 100;
+  const shipping = 60;
   const grandTotal = total + shipping;
   document.getElementById("productTotal").textContent = "₹" + total;
   document.getElementById("total").textContent = "₹" + grandTotal;
@@ -259,7 +259,7 @@ document.getElementById("whatsappButton").addEventListener("click", function() {
     return;
   }
 
-  const shipping = 100;
+  const shipping = 60;
   const grandTotal = total + shipping;
 
   const message =
